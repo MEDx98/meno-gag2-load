@@ -1,5 +1,5 @@
 -- MENO locked: gag2-explore.lua
--- loadstring(game:HttpGet("https://raw.githubusercontent.com/MEDx98/meno-gag2-load/master/gag2-explore.lua", true))("YOUR_KEY")
+-- loadstring(game:HttpGet("https://raw.githubusercontent.com/MEDx98/meno-gag2-load/agent/gag2-v4-5-manual-queue/gag2-explore.lua", true))("YOUR_KEY")
 -- Preview/custom CDN: pass its base URL as the second argument.
 local KEY, BASE_OVERRIDE = ...
 if type(KEY) ~= "string" or KEY == "" then
@@ -8,7 +8,7 @@ end
 assert(type(KEY) == "string" and #KEY > 0, '[MENO] provide key: loadstring(game:HttpGet(...))("YOUR_KEY")')
 
 local env = (getgenv and getgenv()) or _G
-local LOCKED_BASE = type(BASE_OVERRIDE) == "string" and BASE_OVERRIDE or "https://raw.githubusercontent.com/MEDx98/meno-gag2-load/master/"
+local LOCKED_BASE = type(BASE_OVERRIDE) == "string" and BASE_OVERRIDE or "https://raw.githubusercontent.com/MEDx98/meno-gag2-load/agent/gag2-v4-5-manual-queue/"
 LOCKED_BASE = tostring(LOCKED_BASE):gsub("^%s+", ""):gsub("%s+$", "")
 assert(LOCKED_BASE:match("^https?://"), "[MENO] invalid locked base")
 if LOCKED_BASE:sub(-1) ~= "/" then LOCKED_BASE = LOCKED_BASE .. "/" end
