@@ -1,14 +1,19 @@
 -- MENO locked: gag2-pet-name-map.lua
 -- loadstring(game:HttpGet("https://raw.githubusercontent.com/MEDx98/meno-gag2-load/master/gag2-pet-name-map.lua", true))("YOUR_KEY")
-local KEY = ...
+-- Preview/custom CDN: pass its base URL as the second argument.
+local KEY, BASE_OVERRIDE = ...
 if type(KEY) ~= "string" or KEY == "" then
 	KEY = ((getgenv and getgenv()) or _G).MENO_GAG2_KEY
 end
 assert(type(KEY) == "string" and #KEY > 0, '[MENO] provide key: loadstring(game:HttpGet(...))("YOUR_KEY")')
 
 local env = (getgenv and getgenv()) or _G
+local LOCKED_BASE = type(BASE_OVERRIDE) == "string" and BASE_OVERRIDE or "https://raw.githubusercontent.com/MEDx98/meno-gag2-load/master/"
+LOCKED_BASE = tostring(LOCKED_BASE):gsub("^%s+", ""):gsub("%s+$", "")
+assert(LOCKED_BASE:match("^https?://"), "[MENO] invalid locked base")
+if LOCKED_BASE:sub(-1) ~= "/" then LOCKED_BASE = LOCKED_BASE .. "/" end
 env.MENO_GAG2_KEY = KEY
-env.MENO_GAG2_LOCKED_BASE = "https://raw.githubusercontent.com/MEDx98/meno-gag2-load/master/"
+env.MENO_GAG2_LOCKED_BASE = LOCKED_BASE
 
 local function __meno_b64decode(data)
 	local b='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
