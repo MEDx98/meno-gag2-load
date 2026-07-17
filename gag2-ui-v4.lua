@@ -1,5 +1,5 @@
--- MENO locked: gag2-ui.lua
--- loadstring(game:HttpGet("https://raw.githubusercontent.com/MEDx98/meno-gag2-load/master/gag2-ui.lua", true))("YOUR_KEY")
+-- MENO locked: gag2-ui-v4.lua
+-- loadstring(game:HttpGet("https://raw.githubusercontent.com/MEDx98/meno-gag2-load/master/gag2-ui-v4.lua", true))("YOUR_KEY")
 local KEY = ...
 if type(KEY) ~= "string" or KEY == "" then
 	KEY = ((getgenv and getgenv()) or _G).MENO_GAG2_KEY

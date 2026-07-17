@@ -8,6 +8,12 @@ Public encrypted scripts. Source stays private.
 loadstring(game:HttpGet("https://raw.githubusercontent.com/MEDx98/meno-gag2-load/master/gag2-ui.lua", true))("YOUR_KEY")
 ```
 
+## Run Control Center v4.5
+
+```lua
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MEDx98/meno-gag2-load/master/gag2-ui-v4.lua", true))("YOUR_KEY")
+```
+
 ## Other
 
 ```lua
