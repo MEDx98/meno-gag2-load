@@ -16,7 +16,7 @@ Run Fleet once in every Roblox account used for automatic delivery. It starts in
 loadstring(game:HttpGet("https://raw.githubusercontent.com/MEDx98/meno-gag2-load/agent/gag2-v4-5-manual-queue/gag2-ui.lua", true))("YOUR_KEY")
 ```
 
-The UI provides manual sends, move-all, settings, and logs. It does not start the automatic order worker. If one account needs both roles, start Fleet first and then the UI.
+The UI provides manual sends, move-all, settings, and logs. It starts Anti-AFK automatically and does not start the automatic order worker. If one account needs both roles, start Fleet first and then the UI.
 
 `gag2-ui-v4.lua` is an alias for the same current Control Center. Prefer the shorter `gag2-ui.lua` URL.
 
