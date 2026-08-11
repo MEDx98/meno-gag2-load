@@ -1,5 +1,5 @@
--- MENO locked: gag2-ui.lua
--- loadstring(game:HttpGet("https://raw.githubusercontent.com/MEDx98/meno-gag2-load/agent/gag2-v4-5-manual-queue/gag2-ui.lua", true))("YOUR_KEY")
+-- MENO locked: gag2-ui-v4.lua
+-- loadstring(game:HttpGet("https://raw.githubusercontent.com/MEDx98/meno-gag2-load/agent/gag2-v4-5-manual-queue/gag2-ui-v4.lua", true))("YOUR_KEY")
 -- Preview/custom CDN: pass its base URL as the second argument.
 local KEY, BASE_OVERRIDE = ...
 if type(KEY) ~= "string" or KEY == "" then
